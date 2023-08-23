@@ -1,0 +1,9 @@
+<div class="row text-left">
+  <div *ngIf="nome" class="col-7 titulo">{{nome}}</div>
+  <div class="col text-end">
+    <ng-template ngFor let-ponto [ngForOf]="pontos" let-posicaoNoArray="index">
+      <i [ngClass]="ponto.cssBolinha" (click)="pontoSelecionado(ponto)"></i>
+    </ng-template>
+  </div>
+
+</div>

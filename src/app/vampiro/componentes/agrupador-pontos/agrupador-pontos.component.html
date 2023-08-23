@@ -1,0 +1,5 @@
+<div class="text-center titulo">{{tipo.titulo}}</div>
+
+<ng-template ngFor let-atributo [ngForOf]="tipo.atributos" let-posicaoNoArray="index">
+    <app-pontos [ehDeAtributo]="tipo.ehDeAtributo" [nome]="atributo"></app-pontos>
+</ng-template>
